@@ -1,0 +1,28 @@
+package by. abdurahimanvarov.utill;
+
+import by. abdurahimanvarov.model.data.Group;
+import by. abdurahimanvarov.model.data.Student;
+
+public class StudentsConverter {
+
+    public static String convertStudentsToString(Student[] students) {
+        String msg = "";
+
+        for (Student student : students) {
+            msg += student.getName()
+                    + " (age = " + student.getAge()
+                    + ", mark = " + student.getMark() + ")\n";
+        }
+        return msg;
+    }
+
+    public static Student[] convertGroupToArray(Group group) {
+        Student[] students = new Student[group.size()];
+        for (int i = 0; i < group.size(); i++) {
+            students[i] = group.get(i);
+
+        }
+        return students;
+    }
+
+}
