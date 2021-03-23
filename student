@@ -1,0 +1,44 @@
+package by. abdurahimanvarov.model.data;
+
+public class Group {
+
+    private Student[] list;
+//    private ArrayList<Student> list;
+
+    public Group() {
+        list = new Student[0];
+
+//        list = new ArrayList<>();
+    }
+
+    public Group(Student[] students) {
+        list = students;
+
+//        list = new ArrayList<>(students.length);
+    }
+
+        public int size() {
+        return list.length;
+//        return list.size();
+    }
+
+    public Student get(int index) {
+        return list[index];
+    }
+
+    public void add(Student student) {
+        Student[] newList = new Student[list.length + 1];
+        int i = 0;
+        for (; i < list.length; i++) {
+            newList[i] = list[i];
+        }
+        newList[i] = student;
+        list = newList;
+    }
+
+}
+
+
+
+
+
