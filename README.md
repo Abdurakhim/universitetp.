@@ -1,2 +1,2 @@
-# universitetp.
+# universitetproject.
 First Git project
