@@ -1,0 +1,51 @@
+Controller;
+package by.abdurahimanvarov.controller;
+
+import by. abdurahimanvarov.model.data.Group;
+import by. abdurahimanvarov.model.data.Student;
+import by. abdurahimanvarov.logic.UniversitetManager;
+import by. abdurahimanvarov.utill.StudentsConverter;
+import java.io.FileOutputStream;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Group gruppa = new Group();
+        
+        
+        
+        String name = "fdff";
+        int age = 25;
+        int mark = 5;
+        
+        
+        
+        	
+        gruppa.add(new Student(name, age, mark));
+        gruppa.add(new Student("Alex", 22, 5));
+        gruppa.add(new Student("Vova", 28, 3));
+        gruppa.add(new Student("Masha", 23, 3));
+        gruppa.add(new Student("Katya", 22, 3));
+        
+        //System.out.println(UniversitetManager.findMarkStudent(gruppa, name));
+        
+        
+        
+        
+
+//        double awgMark = UniversitetManager.calculateAwgMark(students);
+//        
+        Student[] bestStudent = UniversitetManager.findBestStudents(gruppa);
+
+        Student[] badStudent = UniversitetManager.findBadStudents(gruppa);
+
+        String msg1 = "Good students:\n"
+                + StudentsConverter.convertStudentsToString(bestStudent);
+        String msg2 = "Bad students:\n"
+                + StudentsConverter.convertStudentsToString(badStudent);
+
+        System.out.println(msg1 + msg2);
+    }
+}
+
