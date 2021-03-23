@@ -1,0 +1,17 @@
+package by. abdurahimanvarov.utill;
+
+public class AddNewStudent {
+    
+    
+    public static void addNewStudent (String msgName, String msgAge, String msgMark){
+        
+        
+        
+        
+        
+        
+    }
+    
+}
+
+
