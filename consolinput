@@ -1,0 +1,10 @@
+
+package by. abdurahimanvarov.utill;
+
+import java.util.Scanner;
+
+public class ConsoleInput { 
+    private static final Scanner SCAN = new Scanner(System.in);
+
+    
+}
