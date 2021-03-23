@@ -1,0 +1,41 @@
+
+public static Student[] findBestStudents(Group group) {
+
+        double maxMark = findMaxMark(group);
+        int count = calculateCount(group, maxMark);
+
+        Student[] bestStudents = new Student[count];
+        int index = 0;
+
+        for (int i = 0; i < group.size(); i++) {
+            if (group.get(i).getMark() == maxMark) {
+                bestStudents[index++] = group.get(i);
+            }
+        }
+        return bestStudents;
+    }
+
+    public static Student[] findBadStudents(Group group) {
+
+        double minMark = findMinMark(group);
+        int count = calculateCount(group, minMark);
+
+        Student[] badStudents = new Student[count];
+        int index = 0;
+
+        for (int i = 0; i < group.size(); i++) {
+            if (group.get(i).getMark() == minMark) {
+                badStudents[index++] = group.get(i);
+            }
+        }
+        return badStudents;
+    }
+
+
+}
+
+
+
+
+
+
