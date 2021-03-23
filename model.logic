@@ -1,0 +1,57 @@
+package by. abdurahimanvarov.model.logic;
+import by. abdurahimanvarov.model.data.Group;
+import by. abdurahimanvarov.model.data.Student;
+
+public class UniversitetManager {
+
+    private UniversitetManager() {
+
+    }
+
+    public static double calculateAwgMark(Group group) {
+        double awgMark = 0;
+        for (int i = 0; i < group.size(); i++) {
+            awgMark += group.get(i).getMark();
+        }
+
+        return awgMark / group.size();
+    }
+
+    public static double calculateAwgAge(Group group) {
+        double awgAge = 0;
+        for (int i = 0; i < group.size(); i++) {
+            awgAge += group.get(i).getAge();
+        }
+        return awgAge / group.size();
+    }
+
+    private static double findMaxMark(Group group) {
+        double maxMark = 0;
+        for (int i = 0; i < group.size(); i++) {
+            if (maxMark < group.get(i).getMark()) {
+                maxMark = group.get(i).getMark();
+            }
+        }
+        return maxMark;
+    }
+
+    private static double findMinMark(Group group) {
+        double minMark = 10;
+        for (int i = 0; i < group.size(); i++) {
+            if (minMark > group.get(i).getMark()) {
+                minMark = group.get(i).getMark();
+            }
+        }
+        return minMark;
+    }
+
+    private static int calculateCount(Group group, double mark) {
+        int count = 0;
+
+        for (int i = 0; i < group.size(); i++) {
+            if (mark == group.get(i).getMark()) {
+                count++;
+            }        }
+         return count;
+    }
+
