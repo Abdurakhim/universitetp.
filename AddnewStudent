@@ -1,15 +1,9 @@
 package by. abdurahimanvarov.utill;
 
-public class AddNewStudent {
+public class AddNewStudent { \\ this is the class to add students
     
-    
-    public static void addNewStudent (String msgName, String msgAge, String msgMark){
-        
-        
-        
-        
-        
-        
+    public static void addNewStudent (String msgName, String msgAge, String msgMark){  \\here to be determined from  name , age and mark 
+             
     }
     
 }
