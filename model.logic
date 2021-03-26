@@ -1,6 +1,4 @@
-package by. abdurahimanvarov.model.logic;
-import by. abdurahimanvarov.model.data.Group;
-import by. abdurahimanvarov.model.data.Student;
+
 
 public class UniversitetManager {
 
