@@ -1,10 +1,4 @@
-Controller;
-package by.abdurahimanvarov.controller;
 
-import by. abdurahimanvarov.model.data.Group;
-import by. abdurahimanvarov.model.data.Student;
-import by. abdurahimanvarov.logic.UniversitetManager;
-import by. abdurahimanvarov.utill.StudentsConverter;
 import java.io.FileOutputStream;
 
 public class Main {
